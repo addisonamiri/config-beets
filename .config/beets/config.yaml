@@ -1,0 +1,26 @@
+directory:      ~/Sounds/Music
+library:        ~/Sounds/Music/beetslibrary.blb
+asciify_paths:  yes
+sort_item:      albumartist+ album+ disc+ track+
+plugins:        scrub chroma embedart fetchart mbsync the play missing duplicates fromfilename info
+
+import:
+  timid:        yes
+  move:         yes
+
+ui:
+  color:        yes
+
+paths:
+  default:      %the{$albumartist}/($year) $album/$track $title
+  singleton:    %the{$albumartist}/($year) $album/$track $title
+  comp:         %the{$albumartist}/($year) $album/$track $title
+
+embedart:
+  maxwidth:     500
+
+acoustid:
+  apikey:       3mCDWUzedB
+
+play:
+  command:      mpv --no-audio-display --playlist

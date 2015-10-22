@@ -1,0 +1,6 @@
+*
+!/.config
+!/.config/beets
+!/.config/beets/config.yaml
+!/.gitignore.d
+!/.gitignore.d/beets
